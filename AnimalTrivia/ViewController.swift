@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var aLabel: UILabel!
+    @IBOutlet weak var bLabel: UILabel!
+    @IBOutlet weak var cLabel: UILabel!
+    
     @IBOutlet weak var aButton: UIButton!
     @IBOutlet weak var bButton: UIButton!
     @IBOutlet weak var cButton: UIButton!
@@ -29,13 +33,33 @@ class ViewController: UIViewController {
     }
 
     @IBAction func aButtonPressed(sender: UIButton) {
+        incorrectAImageView.hidden = false
+        aButton.hidden = true
+        
+        bButton.enabled = false
+        cButton.enabled = false
+        
+        aLabel.textColor = UIColor.redColor()
     }
 
     @IBAction func bButtonPresssed(sender: UIButton) {
+        incorrectBImageView.hidden = false
+        bButton.hidden = true
+        
+        aButton.enabled = false
+        cButton.enabled = false
+        
+        bLabel.textColor = UIColor.redColor()
     }
     
     @IBAction func cButtonPressed(sender: UIButton) {
+        correctCImageView.hidden = false
+        cButton.hidden = true
         
+        bButton.enabled = false
+        aButton.enabled = false
+        
+        cLabel.textColor = UIColor.grayColor()
     }
     
 }

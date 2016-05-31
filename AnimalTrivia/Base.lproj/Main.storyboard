@@ -84,8 +84,11 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="aButton" destination="GVU-lV-r0v" id="jId-Oo-1UB"/>
+                        <outlet property="aLabel" destination="0hj-sK-a6b" id="bLC-jP-m3G"/>
                         <outlet property="bButton" destination="VoT-gH-iMQ" id="4dX-VI-YZI"/>
+                        <outlet property="bLabel" destination="usc-Uf-pDI" id="JbZ-Pv-dng"/>
                         <outlet property="cButton" destination="Vud-Jt-9IQ" id="z7L-YF-NRC"/>
+                        <outlet property="cLabel" destination="h0d-Am-pPK" id="433-bX-E6d"/>
                         <outlet property="correctCImageView" destination="0Mx-Hs-brE" id="vN3-OB-yK9"/>
                         <outlet property="incorrectAImageView" destination="JS4-vd-ZLQ" id="Dc3-Rf-GWy"/>
                         <outlet property="incorrectBImageView" destination="nBg-2d-NK9" id="YLh-Ie-RRT"/>
