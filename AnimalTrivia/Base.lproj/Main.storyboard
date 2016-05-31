@@ -50,6 +50,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVU-lV-r0v">
                                 <rect key="frame" x="18" y="298" width="30" height="30"/>
                                 <state key="normal" title="A" image="A"/>
+                                <connections>
+                                    <action selector="aButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b8i-Ee-aH5"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="incorrectAnswer" translatesAutoresizingMaskIntoConstraints="NO" id="nBg-2d-NK9">
                                 <rect key="frame" x="18" y="359" width="30" height="30"/>
@@ -57,6 +60,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoT-gH-iMQ">
                                 <rect key="frame" x="18" y="359" width="30" height="30"/>
                                 <state key="normal" title="B" image="B"/>
+                                <connections>
+                                    <action selector="bButtonPresssed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j3U-7c-9EV"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="correctAnswer" translatesAutoresizingMaskIntoConstraints="NO" id="0Mx-Hs-brE">
                                 <rect key="frame" x="18" y="425" width="30" height="30"/>
@@ -64,6 +70,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vud-Jt-9IQ">
                                 <rect key="frame" x="18" y="425" width="30" height="30"/>
                                 <state key="normal" title="C" image="C"/>
+                                <connections>
+                                    <action selector="cButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U6f-fi-UaK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJC-P5-w06">
                                 <rect key="frame" x="2" y="584" width="370" height="63"/>
@@ -77,6 +86,9 @@
                         <outlet property="aButton" destination="GVU-lV-r0v" id="jId-Oo-1UB"/>
                         <outlet property="bButton" destination="VoT-gH-iMQ" id="4dX-VI-YZI"/>
                         <outlet property="cButton" destination="Vud-Jt-9IQ" id="z7L-YF-NRC"/>
+                        <outlet property="correctCImageView" destination="0Mx-Hs-brE" id="vN3-OB-yK9"/>
+                        <outlet property="incorrectAImageView" destination="JS4-vd-ZLQ" id="Dc3-Rf-GWy"/>
+                        <outlet property="incorrectBImageView" destination="nBg-2d-NK9" id="YLh-Ie-RRT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

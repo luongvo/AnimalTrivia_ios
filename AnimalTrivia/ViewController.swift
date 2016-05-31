@@ -13,6 +13,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var aButton: UIButton!
     @IBOutlet weak var bButton: UIButton!
     @IBOutlet weak var cButton: UIButton!
+    
+    @IBOutlet weak var incorrectAImageView: UIImageView!
+    @IBOutlet weak var incorrectBImageView: UIImageView!
+    @IBOutlet weak var correctCImageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +28,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func aButtonPressed(sender: UIButton) {
+    }
 
+    @IBAction func bButtonPresssed(sender: UIButton) {
+    }
+    
+    @IBAction func cButtonPressed(sender: UIButton) {
+        
+    }
+    
 }
 
