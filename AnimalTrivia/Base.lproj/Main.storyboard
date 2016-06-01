@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fZj-YM-iT1">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -101,6 +101,41 @@
             </objects>
             <point key="canvasLocation" x="304.5" y="624.5"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Dnx-jN-Vo2">
+            <objects>
+                <viewController id="fZj-YM-iT1" customClass="ViewController" customModule="AnimalTrivia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fMH-gr-uxs"/>
+                        <viewControllerLayoutGuide type="bottom" id="PJc-wg-QZY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DsJ-dG-eEH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egP-tL-V0J">
+                                <rect key="frame" x="180" y="550" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="L3J-ez-cdd"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type text here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eFz-d3-rhK">
+                                <rect key="frame" x="20" y="28" width="277" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="eFz-d3-rhK" id="5eG-aJ-hzn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XGL-NW-75i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-267" y="625"/>
+        </scene>
         <!--Second View Controller-->
         <scene sceneID="rpJ-Zu-LzA">
             <objects>
@@ -167,6 +202,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFM-LY-2Yj">
                                 <rect key="frame" x="2" y="584" width="370" height="63"/>
                                 <state key="normal" image="nextButton_NEW"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Hdt-XV-gGh"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Polar Bear" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spx-ZG-jd0">
                                 <rect key="frame" x="81" y="218" width="136" height="36"/>
@@ -193,4 +231,7 @@
         <image name="platypus" width="254" height="254"/>
         <image name="polarBear" width="254" height="254"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="L3J-ez-cdd"/>
+    </inferredMetricsTieBreakers>
 </document>

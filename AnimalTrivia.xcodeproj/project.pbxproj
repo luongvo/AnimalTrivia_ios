@@ -15,6 +15,7 @@
 		97312FD51CFC42A6001AD789 /* AnimalTriviaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97312FD41CFC42A6001AD789 /* AnimalTriviaTests.swift */; };
 		97312FE01CFC42A6001AD789 /* AnimalTriviaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97312FDF1CFC42A6001AD789 /* AnimalTriviaUITests.swift */; };
 		977E73761CFE8CBA00F4576A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977E73751CFE8CBA00F4576A /* SecondViewController.swift */; };
+		977E73781CFEEC5C00F4576A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977E73771CFEEC5C00F4576A /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		97312FDF1CFC42A6001AD789 /* AnimalTriviaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTriviaUITests.swift; sourceTree = "<group>"; };
 		97312FE11CFC42A6001AD789 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		977E73751CFE8CBA00F4576A /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		977E73771CFEEC5C00F4576A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				97312FC81CFC42A6001AD789 /* LaunchScreen.storyboard */,
 				97312FCB1CFC42A6001AD789 /* Info.plist */,
 				977E73751CFE8CBA00F4576A /* SecondViewController.swift */,
+				977E73771CFEEC5C00F4576A /* ViewController.swift */,
 			);
 			path = AnimalTrivia;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				977E73761CFE8CBA00F4576A /* SecondViewController.swift in Sources */,
 				97312FC21CFC42A6001AD789 /* FirstViewController.swift in Sources */,
+				977E73781CFEEC5C00F4576A /* ViewController.swift in Sources */,
 				97312FC01CFC42A6001AD789 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
