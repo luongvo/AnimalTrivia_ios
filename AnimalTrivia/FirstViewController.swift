@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FirstViewController: UIViewController {
 
     @IBOutlet weak var aLabel: UILabel!
     @IBOutlet weak var bLabel: UILabel!
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         bButton.enabled = false
         cButton.enabled = false
         
-        aLabel.textColor = UIColor.redColor()
+        aLabel.textColor = UIColor(red: 0.98, green: 0.39, blue: 0.4, alpha: 1.0)
     }
 
     @IBAction func bButtonPresssed(sender: UIButton) {
@@ -49,7 +49,7 @@ class ViewController: UIViewController {
         aButton.enabled = false
         cButton.enabled = false
         
-        bLabel.textColor = UIColor.redColor()
+        bLabel.textColor = UIColor(hue: 358/360, saturation: 60/100, brightness: 98/100, alpha: 1.0)
     }
     
     @IBAction func cButtonPressed(sender: UIButton) {
